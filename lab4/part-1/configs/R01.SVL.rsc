@@ -42,7 +42,7 @@ add name=br28
 /ip address
 add address=10.100.1.3/32 interface=br28
 /ip route vrf
-add export-route-targets=64512:100 import-route-targets=64512:100 interfaces=br28 route-distinguisher=64512:100 redistribute-connected=yes routing-mark=VRF
+add export-route-targets=64512:100 import-route-targets=64512:100 interfaces=br28 route-distinguisher=64512:100 routing-mark=VRF
 /routing bgp instance vrf
 add redistribute-connected=yes routing-mark=VRF
 
